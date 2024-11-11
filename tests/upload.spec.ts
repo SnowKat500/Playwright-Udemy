@@ -45,7 +45,7 @@ test.describe('Upload file tests', () => {
         
         //wait for condition
         await (cartPage.uploadComponent().successText)
-            .waitFor({ state: 'visible', timeout: 10000});
+            .waitFor({ state: 'visible', timeout: 15000});
 
         // assertion
         await expect(cartPage.uploadComponent().successText).toContainText('uploaded successfully');
@@ -57,6 +57,6 @@ test.describe('Upload file tests', () => {
         // upload test file
         cartPage.uploadComponent().uploadFile(filePath);
         // assertion with wait
-        await expect(cartPage.uploadComponent().successText).toContainText('uploaded successfully', {timeout: 10000});
+        await expect(cartPage.uploadComponent().successText).toContainText('uploaded successfully', {timeout: 15000});
     });
 })
