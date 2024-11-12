@@ -19,6 +19,6 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v3
         with:
-          name: Test Results
+          name: test-results
           path: test-results
 
