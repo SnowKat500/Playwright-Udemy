@@ -19,7 +19,7 @@ test.beforeEach(async ({ page }) => {
         await expect(page).not.toHaveURL(/.*#get-started/); 
         //await page.locator('#get-started').click();
         await homePage.getStartedButton.click();
-        await expect(page).toHaveURL(/.*#get-farted/);
+        await expect(page).toHaveURL(/.*#get-started/);
         
     }); 
 
